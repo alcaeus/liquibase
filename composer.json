@@ -1,0 +1,25 @@
+{
+    "name": "alcaeus/liquibase",
+    "description": "Composer package to provide liquibase integration",
+    "type": "library",
+    "keywords": [
+        "liquibase",
+        "database"
+    ],
+    "homepage": "https://github.com/alcaeus/liquibase",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas B.",
+            "email": "alcaeus@alcaeus.org",
+            "role": "lead"
+        }
+    ],
+    "require": {
+    },
+    "suggest": {
+    },
+    "bin": [
+        "liquibase"
+    ]
+}
