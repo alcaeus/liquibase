@@ -7,7 +7,7 @@
         "database"
     ],
     "homepage": "https://github.com/alcaeus/liquibase",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Andreas B.",
