@@ -1,8 +1,6 @@
 #! /bin/sh
 
-if [ -n "${LIQUIBASE_HOME+x}" ]; then
-echo "Liquibase Home: $LIQUIBASE_HOME"
-else
+if [ ! -n "${LIQUIBASE_HOME+x}" ]; then
   echo "Liquibase Home is not set."
 
   ## resolve links - $0 may be a symlink
@@ -22,7 +20,7 @@ else
 
   # make it fully qualified
   LIQUIBASE_HOME=`cd "$LIQUIBASE_HOME" && pwd`
-  echo "Liquibase Home: $LIQUIBASE_HOME"
+  # echo "Liquibase Home: $LIQUIBASE_HOME"
 fi
 
  
@@ -48,7 +46,7 @@ else
 fi
 
 # add any JVM options here
-JAVA_OPTS=
+JAVA_OPTS="${JAVA_OPTS-}"
 
 java -cp "$CP" $JAVA_OPTS liquibase.integration.commandline.Main ${1+"$@"}
 
